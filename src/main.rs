@@ -49,7 +49,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     all_data.sort_by_key(|d| d.date);
 
     // Write the collected data to a CSV file
-    let file_path = "race_data.csv";
+    let file_path = "api_race_data.csv";
     let mut wtr = csv::Writer::from_path(file_path)?;
 
     for record in all_data {
